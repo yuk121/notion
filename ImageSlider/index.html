@@ -18,7 +18,8 @@
         .slider {
             position: relative;
             width: 80%;
-            max-width: 600px;
+            max-width: 800px;
+            aspect-ratio: 16 / 9; /* 슬라이더의 기본 비율 */
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -36,10 +37,10 @@
             background-color: #000;
         }
         .slide img {
-            width: auto;
+            width: 100%;
             height: 100%;
-            max-width: 100%;
-            object-fit: contain; /* 비율 유지하며 맞춤 */
+            object-fit: contain; /* 비율 유지 */
+            object-position: center; /* 중앙에 배치 */
         }
         .navigation {
             position: absolute;
